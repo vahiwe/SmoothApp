@@ -1,0 +1,66 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="@drawable/bck2"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical"
+			android:alpha="0.5">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Click on the &quot;Confirm&quot; button to unlock all features. "
+				android:textSize="14sp"
+				android:textStyle="bold|italic"
+				android:textColor="#880E4F"/>
+			<Button
+				android:id="@+id/button2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="120dp"
+				android:padding="8dp"
+				android:background="#F48FB1"
+				android:text="CONFIRM PIN"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#000000"/>
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:padding="8dp"
+				android:text="TAKE NOTE: If peradventure perhaps maybe your phone got misplaced accidentally, or your cache got wiped and the password reset... Go to your purchase center, present your slip or any other proof of payment asked of you,  and it would be unlocked for you. "
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#000000"/>
+			<Button
+				android:id="@+id/button3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:padding="8dp"
+				android:background="#F48FB1"
+				android:text="FINISH "
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#000000"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
