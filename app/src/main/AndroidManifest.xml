@@ -12,6 +12,7 @@
 		<activity
 			android:name=".MainActivity"
 			android:configChanges="orientation|screenSize"
+			android:label="Smooth App"
 			android:screenOrientation="portrait"
 			android:windowSoftInputMode="stateHidden">
 			<intent-filter>

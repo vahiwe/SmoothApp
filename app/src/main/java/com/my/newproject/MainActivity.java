@@ -2,6 +2,7 @@ package com.my.newproject;
 
 import android.app.*;
 import android.os.*;
+import android.support.v7.widget.CardView;
 import android.view.*;
 import android.view.View.*;
 import android.widget.*;
@@ -36,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
 	private double s1 = 0;
 	
 	private LinearLayout linear2;
-	private Button topics_;
-	private Button pastqtns;
-	private Button assignments;
-	private Button testimonies;
-	private Button vipsection;
+	private CardView topics_;
+	private CardView pastqtns;
+	private CardView assignments;
+	private CardView testimonies;
+	private CardView vipsection;
 	private Button premiun;
 	
 	private Intent topics = new Intent();
@@ -58,29 +59,31 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.activity_main);
+		Toolbar toolbar = findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
 		initialize();
 		initializeLogic();
 	}
 	
 	private void initialize() {
 		
-		_toolbar = (Toolbar) findViewById(R.id._toolbar);
-		setSupportActionBar(_toolbar);
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setHomeButtonEnabled(true);
-		_toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _v) {
-				onBackPressed();
-			}
-		});
+//		_toolbar = (Toolbar) findViewById(R.id._toolbar);
+//		setSupportActionBar(_toolbar);
+//		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//		getSupportActionBar().setHomeButtonEnabled(true);
+//		_toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View _v) {
+//				onBackPressed();
+//			}
+//		});
 		linear2 = (LinearLayout) findViewById(R.id.linear2);
-		topics_ = (Button) findViewById(R.id.topics_);
-		pastqtns = (Button) findViewById(R.id.pastqtns);
-		assignments = (Button) findViewById(R.id.assignments);
-		testimonies = (Button) findViewById(R.id.testimonies);
-		vipsection = (Button) findViewById(R.id.vipsection);
+		topics_ = findViewById(R.id.topics_);
+		pastqtns =  findViewById(R.id.pastqtns);
+		assignments =  findViewById(R.id.assignments);
+		testimonies =  findViewById(R.id.testimonies);
+		vipsection =  findViewById(R.id.vipsection);
 		premiun = (Button) findViewById(R.id.premiun);
 		exit_ = new AlertDialog.Builder(this);
 		smooth1 = getSharedPreferences("override", Activity.MODE_PRIVATE);
