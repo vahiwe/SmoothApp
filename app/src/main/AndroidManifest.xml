@@ -33,6 +33,7 @@
 		<activity
 			android:name=".TestimoniesActivity"
 			android:configChanges="orientation|screenSize"
+			android:label="Testimonies"
 			android:screenOrientation="portrait"
 			android:windowSoftInputMode="stateHidden"/>
 		<activity

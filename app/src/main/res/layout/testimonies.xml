@@ -1,758 +1,1131 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/vscroll1"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:background="#FFE0B2"
+	android:padding="8dp"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".TestimoniesActivity"
+	tools:showIn="@layout/activity_testimonies">
+
+
 	<LinearLayout
-		android:id="@+id/linear1"
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:padding="8dp"
-		android:background="#7B1FA2"
-		android:orientation="horizontal">
-		<TextView
-			android:id="@+id/header"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center_horizontal"
-			android:text="Testimonies"
-			android:textSize="16sp"
-			android:textStyle="bold"
-			android:textColor="#FFFFFF"
-			android:layout_gravity="center_horizontal|center_vertical"/>
-	</LinearLayout>
-	<ScrollView
-		android:id="@+id/vscroll1"
+		android:id="@+id/linear2"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:padding="8dp"
-		android:background="#FFE0B2">
-		<LinearLayout
-			android:id="@+id/linear2"
+		android:background="#FFE0B2"
+		android:orientation="vertical"
+		android:padding="8dp">
+
+		<android.support.constraint.ConstraintLayout
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:background="#FFF3E0"
-			android:orientation="vertical">
-			<TextView
-				android:id="@+id/textview3"
-				android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFE0B2">
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony1"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="INNOCENT CHIDERA SHAMMAH (CHE 300lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"/>
-			<ImageView
-				android:id="@+id/imageview3"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/chid"
-				android:scaleType="centerInside"
-				android:translationY="10.0dp"/>
-			<TextView
-				android:id="@+id/textview14"
-				android:layout_width="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="8dp"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintBottom_toTopOf="@+id/testimony2"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview3"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="8dp"
+						android:layout_marginEnd="8dp"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="INNOCENT CHIDERA SHAMMAH (CHE 300lvl) "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview3"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/chid"
+						app:layout_constraintEnd_toEndOf="@+id/textview3"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview3"
+						app:layout_constraintTop_toBottomOf="@+id/textview3" />
+
+					<TextView
+						android:id="@+id/textview14"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/innocent_test1"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview3"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/imageview3"
+						app:layout_constraintTop_toBottomOf="@+id/imageview3" />
+					<!--<TextView-->
+					<!--android:id="@+id/textview15"-->
+					<!--android:layout_width="wrap_content"-->
+					<!--android:layout_height="wrap_content"-->
+					<!--android:padding="8dp"-->
+					<!--android:background="#FFFFFF"-->
+					<!--android:text="  It also contains a large number of exam questions with carefully drafted answers so that the reader becomes well versed with the course. I used it in 100l and it proved it's worth therefore i highly recommend it to anyone hoping to Ace Eng103."-->
+					<!--android:textSize="14sp"-->
+					<!--android:textColor="#000000"-->
+					<!--android:alpha="0.8"-->
+					<!--android:translationY="8.0dp"/>-->
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony2"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Smooth's eng103 app  contains detailed  procedures complemented with properly scaled diagrams which makes learning eng103 a treat to students."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="20.0dp"/>
-			<TextView
-				android:id="@+id/textview15"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony1"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony1"
+				app:layout_constraintTop_toBottomOf="@+id/testimony1">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview16"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="UKAEGBU PHILLIP NMEKADINMA (SLT 400lvl) "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview4"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/phil"
+						app:layout_constraintEnd_toEndOf="@id/textview16"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview16"
+						app:layout_constraintTop_toBottomOf="@+id/textview16" />
+
+					<TextView
+						android:id="@+id/textview17"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="He simplifies engine drawing to the understanding of all. SMOOTH is the real deal."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@id/imageview4"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/imageview4"
+						app:layout_constraintTop_toBottomOf="@+id/imageview4" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony3"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="  It also contains a large number of exam questions with carefully drafted answers so that the reader becomes well versed with the course. I used it in 100l and it proved it's worth therefore i highly recommend it to anyone hoping to Ace Eng103."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="8.0dp"/>
-			<TextView
-				android:id="@+id/textview16"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony2"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony2"
+				app:layout_constraintTop_toBottomOf="@+id/testimony2">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview18"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="MHIZ IB (PUH, 300lvl) "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview5"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/mhiz"
+						app:layout_constraintEnd_toEndOf="@+id/textview18"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview18"
+						app:layout_constraintTop_toBottomOf="@+id/textview18" />
+
+					<TextView
+						android:id="@+id/textview19"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/mhiz_testimony3"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview5"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview5"
+						app:layout_constraintTop_toBottomOf="@+id/imageview5" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony4"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="UKAEGBU PHILLIP NMEKADINMA (SLT 400lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="40.0dp"/>
-			<ImageView
-				android:id="@+id/imageview4"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/phil"
-				android:scaleType="centerInside"
-				android:translationY="50.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview17"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony3"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony3"
+				app:layout_constraintTop_toBottomOf="@+id/testimony3">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview20"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="&quot;Mr EVT&quot; ENVIRONMENTAL TECHNOLOGY 2017/2018 UCHE NWACHUKWU\n"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview7"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/evt"
+						app:layout_constraintEnd_toEndOf="@+id/textview20"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview20"
+						app:layout_constraintTop_toBottomOf="@+id/textview20" />
+
+					<TextView
+						android:id="@+id/textview21"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/evt_testimony4"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview7"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview7"
+						app:layout_constraintTop_toBottomOf="@+id/imageview7" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony5"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="He simplifies engine drawing to the understanding of all. SMOOTH is the real deal."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="56.0dp"/>
-			<TextView
-				android:id="@+id/textview18"
-				android:layout_width="match_parent"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony4"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony4"
+				app:layout_constraintTop_toBottomOf="@+id/testimony4">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview23"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="EZEH WISDOM (PET, 200lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview8"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/ezeh"
+						app:layout_constraintEnd_toEndOf="@+id/textview23"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview23"
+						app:layout_constraintTop_toBottomOf="@+id/textview23" />
+
+					<TextView
+						android:id="@+id/textview24"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/ezeh_testimony5"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview8"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview8"
+						app:layout_constraintTop_toBottomOf="@+id/imageview8" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony6"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="MHIZ IB (PUH, 300lvl)"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="85.0dp"/>
-			<ImageView
-				android:id="@+id/imageview5"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/mhiz"
-				android:scaleType="centerInside"
-				android:translationY="90.0dp"/>
-			<TextView
-				android:id="@+id/textview19"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony5"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony5"
+				app:layout_constraintTop_toBottomOf="@+id/testimony5">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview26"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="NAEMEREM CYNTHIA, ASSISTANT COURSE REP, EVT 2017/2018"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview10"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/cynt"
+						app:layout_constraintEnd_toEndOf="@+id/textview26"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview26"
+						app:layout_constraintTop_toBottomOf="@+id/textview26" />
+
+					<TextView
+						android:id="@+id/textview27"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/cynt_testimony6"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview10"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview10"
+						app:layout_constraintTop_toBottomOf="@+id/imageview10" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony7"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Using this material has been one of the best things that changed my thoughts about engine drawing. Easy to understand, well organized and defined.  Don't  miss out!!!  Sure A is the way... 😁"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="95.0dp"/>
-			<TextView
-				android:id="@+id/textview20"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony6"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony6"
+				app:layout_constraintTop_toBottomOf="@+id/testimony6">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview28"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="NWACHUKWU JOY (QST, 400lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview11"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/joy"
+						app:layout_constraintEnd_toEndOf="@+id/textview28"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview28"
+						app:layout_constraintTop_toBottomOf="@+id/textview28" />
+
+					<TextView
+						android:id="@+id/textview30"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/joy_testimony7"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview11"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview11"
+						app:layout_constraintTop_toBottomOf="@+id/imageview11" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony8"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="&quot;Mr EVT&quot; ENVIRONMENTAL TECHNOLOGY 2017/2018 UCHE NWACHUKWU\n"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="130.0dp"/>
-			<ImageView
-				android:id="@+id/imageview7"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/evt"
-				android:scaleType="centerInside"
-				android:translationY="135.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview21"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony6"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony7"
+				app:layout_constraintTop_toBottomOf="@+id/testimony7">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview32"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="Rt. Hon. Rotr. OBI ONYINYECHI FAVOUR (SVG, 300lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview9"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/onyi"
+						app:layout_constraintEnd_toEndOf="@+id/textview32"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview32"
+						app:layout_constraintTop_toBottomOf="@+id/textview32" />
+
+					<TextView
+						android:id="@+id/textview35"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/onyi_testimony8"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview9"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview9"
+						app:layout_constraintTop_toBottomOf="@+id/imageview9" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony9"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="I have been in many eng drawing tutorial classes and have used many eng drawing materials, if I'm to be honest, i must confess that smooth is the best because he has it [Eng drawing] in him like a natural gift. "
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="140.0dp"/>
-			<TextView
-				android:id="@+id/textview22"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony8"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony8"
+				app:layout_constraintTop_toBottomOf="@+id/testimony8">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview36"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="ANA SANDRA (CIE 300lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview13"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/sand"
+						app:layout_constraintEnd_toEndOf="@+id/textview36"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview36"
+						app:layout_constraintTop_toBottomOf="@+id/textview36" />
+
+					<TextView
+						android:id="@+id/textview31"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/sand_testimony9"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview13"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview13"
+						app:layout_constraintTop_toBottomOf="@+id/imageview13" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony10"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="His drawings are always neat, clean and smooth just like his name. He can teach better than the teachers.\nU need smooth materials and tutorial classes to smash Eng 103 And 104\nA trial will convince you"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="130.0dp"/>
-			<TextView
-				android:id="@+id/textview23"
-				android:layout_width="match_parent"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony9"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony9"
+				app:layout_constraintTop_toBottomOf="@+id/testimony9">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview48"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="ITUNANYA CHINE (MEE, 300lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview15"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/itu"
+						app:layout_constraintEnd_toEndOf="@+id/textview48"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview48"
+						app:layout_constraintTop_toBottomOf="@+id/textview48" />
+
+					<TextView
+						android:id="@+id/textview47"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/itu_testimony10"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview15"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview15"
+						app:layout_constraintTop_toBottomOf="@+id/imageview15" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony11"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="EZEH WISDOM (PET, 200lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="160.0dp"/>
-			<ImageView
-				android:id="@+id/imageview8"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/ezeh"
-				android:scaleType="centerInside"
-				android:translationY="165.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview24"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony10"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony10"
+				app:layout_constraintTop_toBottomOf="@+id/testimony10">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview44"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="OMIKE IFEANYICHUKWU JOHN (PMT, 400lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview6"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/john"
+						app:layout_constraintEnd_toEndOf="@+id/textview44"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview44"
+						app:layout_constraintTop_toBottomOf="@+id/textview44" />
+
+					<TextView
+						android:id="@+id/textview42"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/john_testimony11"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview6"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview6"
+						app:layout_constraintTop_toBottomOf="@+id/imageview6" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony12"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Smooth is a really a wonderful tutor who knows how to break down Engineering Drawing to any level of understanding. I am happy to be part of his tutorials which helped me alot in my 100lvl."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="170.0dp"/>
-			<TextView
-				android:id="@+id/textview26"
-				android:layout_width="match_parent"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony11"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony11"
+				app:layout_constraintTop_toBottomOf="@+id/testimony11">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview54"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="AKPAN BLESSING ITORO (BIO 200lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview16"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/itor"
+						app:layout_constraintEnd_toEndOf="@+id/textview54"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview54"
+						app:layout_constraintTop_toBottomOf="@+id/textview54" />
+
+					<TextView
+						android:id="@+id/textview58"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/itor_testimony12"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview16"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview16"
+						app:layout_constraintTop_toBottomOf="@+id/imageview16" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony13"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="NAEMEREM CYNTHIA, ASSISTANT COURSE REP, EVT 2017/2018"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="200.0dp"/>
-			<ImageView
-				android:id="@+id/imageview10"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/cynt"
-				android:scaleType="centerInside"
-				android:translationY="205.0dp"/>
-			<TextView
-				android:id="@+id/textview27"
-				android:layout_width="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony12"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony12"
+				app:layout_constraintTop_toBottomOf="@+id/testimony12">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview56"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="MEZIE (PUH, 400lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview17"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/mezie"
+						app:layout_constraintEnd_toEndOf="@+id/textview56"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview56"
+						app:layout_constraintTop_toBottomOf="@+id/textview56" />
+
+					<TextView
+						android:id="@+id/textview55"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="With smooth, your A is sweetly smooth."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview17"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview17"
+						app:layout_constraintTop_toBottomOf="@+id/imageview17" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony14"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="See me dat don't sabi Eng drawing but with Smooth's assignment solutions and material, I was able to scale through to get my good grades 🏃 🏃 🏃 🏃 \nThanks to this material.....It helped me go through engineering drawing smoothly."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="210.0dp"/>
-			<TextView
-				android:id="@+id/textview29"
-				android:layout_width="match_parent"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony13"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony13"
+				app:layout_constraintTop_toBottomOf="@+id/testimony13">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview52"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="ADAUGO JUDITH EKEMAM (PUH 400lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview18"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/adu"
+						app:layout_constraintEnd_toEndOf="@+id/textview52"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview52"
+						app:layout_constraintTop_toBottomOf="@+id/textview52" />
+
+					<TextView
+						android:id="@+id/textview40"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/adu_testimony14"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview18"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview18"
+						app:layout_constraintTop_toBottomOf="@+id/imageview18" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony15"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text=" I recommend it for all and sundry"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="200.0dp"/>
-			<TextView
-				android:id="@+id/textview28"
-				android:layout_width="match_parent"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony14"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony14"
+				app:layout_constraintTop_toBottomOf="@+id/testimony14">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview61"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="EZEBUIRO, VICTOR C. (PTE, 300lvl)"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview12"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/vic"
+						app:layout_constraintEnd_toEndOf="@+id/textview61"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview61"
+						app:layout_constraintTop_toBottomOf="@+id/textview61" />
+
+					<TextView
+						android:id="@+id/textview64"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/vic_testimony15"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview12"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview12"
+						app:layout_constraintTop_toBottomOf="@+id/imageview12" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/testimony16"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="NWACHUKWU JOY (QST, 400lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="230.0dp"/>
-			<ImageView
-				android:id="@+id/imageview11"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/joy"
-				android:scaleType="centerInside"
-				android:translationY="235.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview30"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Smooth Eng103 material is easy to read and understand and I'd recommend it for every student that wants to be exceptionally good in engineering drawing"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="240.0dp"/>
-			<TextView
-				android:id="@+id/textview32"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="Rt. Hon. Rotr. OBI ONYINYECHI FAVOUR (SVG, 300lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="270.0dp"/>
-			<ImageView
-				android:id="@+id/imageview9"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/onyi"
-				android:scaleType="centerInside"
-				android:translationY="275.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview35"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Smooth's ENG 103 material..It is ENG103 made easy. \nVery simplified and understandable material.\nMake use of it and your A is assured and secured."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="280.0dp"/>
-			<TextView
-				android:id="@+id/textview36"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="ANA SANDRA (CIE 300lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="310.0dp"/>
-			<ImageView
-				android:id="@+id/imageview13"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/sand"
-				android:scaleType="centerInside"
-				android:translationY="315.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview31"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="I choose to learn from the BEST and in doing so, I came across smooth's material, which gave me a great sense of understanding for my engineering drawing."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="320.0dp"/>
-			<TextView
-				android:id="@+id/textview38"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview33"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview37"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview39"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview34"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview45"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview41"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview46"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview51"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview50"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview49"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview48"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="ITUNANYA CHINE (MEE, 300lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"/>
-			<ImageView
-				android:id="@+id/imageview15"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/itu"
-				android:scaleType="centerInside"
-				android:translationY="5.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview47"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="It is said that &quot;knowledge is the key to success&quot; of which I gained with smooth's ENG103 material. Bag your A today with this material and you won't regret it."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="10.0dp"/>
-			<TextView
-				android:id="@+id/textview44"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="OMIKE IFEANYICHUKWU JOHN (PMT, 400lvl)"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="50.0dp"/>
-			<ImageView
-				android:id="@+id/imageview6"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/john"
-				android:scaleType="centerInside"
-				android:translationY="55.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview42"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="   Creative lines are not just there to lie around, someone has to slice through the dice to make it nice, make your drawings look comprehensive and simple to your lecturers.\n       "
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="60.0dp"/>
-			<TextView
-				android:id="@+id/textview43"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text=" I can't boast of what I haven't seen in this young man maybe it might look overrated but he is a gifted drawer and a practical teacher in engineer drawing, he is willing to bring engineering drawing to the little of your understanding, he is Mr Smooth..."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="35.0dp"/>
-			<TextView
-				android:id="@+id/textview54"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="AKPAN BLESSING ITORO (BIO 200lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="75.0dp"/>
-			<TextView
-				android:id="@+id/textview53"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview59"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="12sp"
-				android:textColor="#000000"/>
-			<ImageView
-				android:id="@+id/imageview16"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/itor"
-				android:scaleType="centerInside"
-				android:translationY="15.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview58"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="When it comes to Engineering drawing, there are loads of commentators that talk a good book but SMOOTH helps you make it happen. "
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="20.0dp"/>
-			<TextView
-				android:id="@+id/textview57"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="He has enabled me, coached me and gave me the needed confidence.\nIt's engaging readers and commentators alike and bringing our education great results."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="10.0dp"/>
-			<TextView
-				android:id="@+id/textview56"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="MEZIE (PUH, 400lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="50.0dp"/>
-			<ImageView
-				android:id="@+id/imageview17"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/mezie"
-				android:scaleType="centerInside"
-				android:translationY="55.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview55"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="With smooth, your A is sweetly smooth. "
-				android:textSize="12sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="60.0dp"/>
-			<TextView
-				android:id="@+id/textview52"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="ADAUGO JUDITH EKEMAM (PUH 400lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="100.0dp"/>
-			<ImageView
-				android:id="@+id/imageview18"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/adu"
-				android:scaleType="centerInside"
-				android:translationY="105.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview40"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="First semester Engine Drawing was actually not difficult for me but where I had the real hell was in my second semester and then I made smooth my good friend 🤗 "
-				android:textSize="12sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="110.0dp"/>
-			<TextView
-				android:id="@+id/textview60"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Through his guidance and tutorials I found out that Engine drawing was actually not difficult and I was able to make a really good grade in the end!"
-				android:textSize="12sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="100.0dp"/>
-			<TextView
-				android:id="@+id/textview61"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="EZEBUIRO, VICTOR C. (PTE, 300lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="140.0dp"/>
-			<ImageView
-				android:id="@+id/imageview12"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/vic"
-				android:scaleType="centerInside"
-				android:translationY="145.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview64"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="Smooth is the best Eng103 tutor I've come across in FUTO. He makes the course so simple and understandable. His material is just a proof."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="150.0dp"/>
-			<TextView
-				android:id="@+id/textview63"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="NWOSU LILIAN (PTE, 300lvl) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="190.0dp"/>
-			<ImageView
-				android:id="@+id/imageview19"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/lil"
-				android:scaleType="centerInside"
-				android:translationY="195.0dp"
-				android:layout_gravity="center_horizontal"/>
-			<TextView
-				android:id="@+id/textview62"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Back then in my year one, at first, I thought that it would be impossible for me to understand this very course. But then, I came across this material &quot;THE BEST ENG. DRAWING MATERIAL&quot; so far."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="200.0dp"/>
-			<TextView
-				android:id="@+id/textview25"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="It was so well explained dat even a lay man can understand. It really helped me along side his tutorials that I began to find the course interesting..."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.8"
-				android:translationY="190.0dp"/>
-			<Button
-				android:id="@+id/save_override"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="OVERRIDE PASSWORD"
-				android:textSize="12sp"
-				android:textStyle="bold"
-				android:textColor="#000000"
-				android:translationY="200.0dp"/>
-			<EditText
-				android:id="@+id/edittext1"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="16sp"
-				android:textColor="#000000"
-				android:hint="Manual Override"
-				android:textColorHint="#607D8B"
-				android:translationY="250.0dp"/>
-			<Button
-				android:id="@+id/one"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="1"
-				android:textSize="12sp"
-				android:textColor="#000000"
-				android:alpha="0.0"
-				android:layout_weight="1"/>
-			<Button
-				android:id="@+id/two"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="2"
-				android:textSize="12sp"
-				android:textColor="#000000"
-				android:translationX="200.0dp"
-				android:translationY="400.0dp"
-				android:layout_weight="1"/>
-			<Button
-				android:id="@+id/three"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="3"
-				android:textSize="12sp"
-				android:textColor="#000000"
-				android:translationY="700.0dp"
-				android:layout_weight="1"/>
-			<ImageView
-				android:id="@+id/imageview20"
-				android:layout_width="wrap_content"
-				android:layout_height="900dp"
-				android:src="@drawable/default_image"
-				android:scaleType="center"
-				android:alpha="0.0"/>
-		</LinearLayout>
-	</ScrollView>
-</LinearLayout>
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/testimony15"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/testimony15"
+				app:layout_constraintTop_toBottomOf="@+id/testimony15">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview63"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="NWOSU LILIAN (PTE, 300lvl) "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageview19"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/lil"
+						app:layout_constraintEnd_toEndOf="@+id/textview63"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview63"
+						app:layout_constraintTop_toBottomOf="@+id/textview63" />
+
+					<TextView
+						android:id="@+id/textview62"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="@string/lil_testimony16"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview19"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/imageview19"
+						app:layout_constraintTop_toBottomOf="@+id/imageview19" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+		</android.support.constraint.ConstraintLayout>
+	</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
