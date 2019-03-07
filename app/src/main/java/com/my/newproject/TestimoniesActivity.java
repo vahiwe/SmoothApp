@@ -3,6 +3,7 @@ package com.my.newproject;
 import android.app.*;
 import android.os.*;
 import android.support.v4.widget.NestedScrollView;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.*;
 import android.view.View.*;
@@ -105,14 +106,16 @@ public class TestimoniesActivity extends AppCompatActivity {
 //	private ImageView imageview19;
 //	private TextView textview62;
 //	private TextView textview25;
-//	private Button save_override;
-//	private EditText edittext1;
-//	private Button one;
-//	private Button two;
-//	private Button three;
+	private CardView save_override;
+	private EditText edittext1;
+	private CardView one;
+	private CardView two;
+	private CardView three;
 //	private ImageView imageview20;
 	
 	private SharedPreferences smooth1;
+	private int mI = 0;
+
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -197,50 +200,52 @@ public class TestimoniesActivity extends AppCompatActivity {
 //		imageview19 = (ImageView) findViewById(R.id.imageview19);
 //		textview62 = (TextView) findViewById(R.id.textview62);
 //		textview25 = (TextView) findViewById(R.id.textview25);
-//		save_override = (Button) findViewById(R.id.save_override);
-//		edittext1 = (EditText) findViewById(R.id.edittext1);
-//		one = (Button) findViewById(R.id.one);
-//		two = (Button) findViewById(R.id.two);
-//		three = (Button) findViewById(R.id.three);
+		save_override = findViewById(R.id.save_override);
+		edittext1 = (EditText) findViewById(R.id.edittext1);
+		one =  findViewById(R.id.one);
+		two =  findViewById(R.id.two);
+		three = findViewById(R.id.three);
 //		imageview20 = (ImageView) findViewById(R.id.imageview20);
 		smooth1 = getSharedPreferences("override", Activity.MODE_PRIVATE);
-//
-//		save_override.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View _view) {
-//				smooth1.edit().putString("over", edittext1.getText().toString()).commit();
-//			}
-//		});
-//
-//		one.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View _view) {
-//				two.setVisibility(View.VISIBLE);
-//			}
-//		});
-//
-//		two.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View _view) {
-//				three.setVisibility(View.VISIBLE);
-//			}
-//		});
-//
-//		three.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View _view) {
-//				save_override.setVisibility(View.VISIBLE);
-//				edittext1.setVisibility(View.VISIBLE);
-//			}
-//		});
+
+		save_override.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				smooth1.edit().putString("over", edittext1.getText().toString()).commit();
+			}
+		});
+
+		one.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				mI++;
+				if (mI > 2)
+					two.setVisibility(View.VISIBLE);
+			}
+		});
+
+		two.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				three.setVisibility(View.VISIBLE);
+			}
+		});
+
+		three.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				save_override.setVisibility(View.VISIBLE);
+				edittext1.setVisibility(View.VISIBLE);
+			}
+		});
 	}
 	private void initializeLogic() {
 //		header.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/xcelsion.ttf"), 0);
-//		three.setVisibility(View.GONE);
-//		one.setVisibility(View.VISIBLE);
-//		two.setVisibility(View.GONE);
-//		edittext1.setVisibility(View.GONE);
-//		save_override.setVisibility(View.GONE);
+		three.setVisibility(View.GONE);
+		one.setVisibility(View.VISIBLE);
+		two.setVisibility(View.GONE);
+		edittext1.setVisibility(View.GONE);
+		save_override.setVisibility(View.GONE);
 	}
 //
 //	@Override

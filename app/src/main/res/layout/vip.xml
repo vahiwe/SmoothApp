@@ -1,386 +1,689 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/vscroll2"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:background="#FFE0B2"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
+	<!--tools:context=".MainActivity"-->
+	<!--tools:showIn="@layout/activity_main">-->
+
 	<LinearLayout
-		android:id="@+id/linear1"
 		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:padding="8dp"
-		android:background="#7B1FA2"
-		android:gravity="left"
-		android:orientation="horizontal">
-		<TextView
-			android:id="@+id/header"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center_horizontal|center_vertical"
-			android:text="VIP Section"
-			android:textSize="16sp"
-			android:textStyle="bold"
-			android:textColor="#FFFFFF"
-			android:layout_gravity="left|center_vertical"/>
-	</LinearLayout>
-	<ScrollView
-		android:id="@+id/vscroll2"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:padding="8dp"
-		android:background="#FFE0B2">
-		<LinearLayout
-			android:id="@+id/linear6"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+
+		<android.support.constraint.ConstraintLayout
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:background="#FFF3E0"
-			android:gravity="center_horizontal"
-			android:orientation="vertical">
-			<TextView
-				android:id="@+id/textview3"
-				android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/vip1"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="MICHAEL SIMEON C (ACHI) "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"/>
-			<TextView
-				android:id="@+id/textview4"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="We may not even realize what our innermost thought are but we can see what we have been thinking by looking at the actions we have taken."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"/>
-			<ImageView
-				android:id="@+id/imageview2"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/achi"
-				android:scaleType="centerInside"/>
-			<TextView
-				android:id="@+id/textview5"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="ALL SAINTS' CHAPEL FUTO"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="20.0dp"/>
-			<TextView
-				android:id="@+id/textview6"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Ever wanted to feel and experience love and care like you've never seen before\? \nEver wanted to be in a place where you feel absolutely free to express your worship without limitation\? "
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="20.0dp"/>
-			<TextView
-				android:id="@+id/textview7"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="All Saints Chapel, FUTO Cordially, and with warm expectation, invites you to worship with us every \nSunday : 8AM\nWednesday : 2PM\nVENUE : Old FUTO park, opposite SEET complex and CCE building."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="10.0dp"/>
-			<ImageView
-				android:id="@+id/imageview3"
-				android:layout_width="wrap_content"
-				android:layout_height="200dp"
-				android:src="@drawable/asc1"
-				android:scaleType="centerInside"
-				android:translationY="10.0dp"/>
-			<ImageView
-				android:id="@+id/imageview4"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/asc2"
-				android:scaleType="centerInside"
-				android:translationY="15.0dp"/>
-			<TextView
-				android:id="@+id/textview9"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="ALL SAINTS'CHAPEL FUTO: a place of love, praise; the gathering of saints... "
-				android:textSize="12sp"
-				android:textStyle="italic"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="15.0dp"/>
-			<TextView
-				android:id="@+id/textview10"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="NEXT LEVEL CONCEPTS"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="35.0dp"/>
-			<TextView
-				android:id="@+id/textview15"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Are u looking for a good Computer Technician or a good Graphic Designer\?\nIf YES then you just found one\nBook us today and you will never regret you did.\nWe design:\n💫E-flyers\n💫Flex banners\n💫Handbill\n💫cards of all kind\n💫envelopes\n💫stickers"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="35.0dp"/>
-			<TextView
-				android:id="@+id/textview14"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="💥and many more. We also print our designs.\nWe also Specialize in\n🔧computer installation and maintenance\n🔧computer repairs\n🔧burning of CDs\n🔧software installation\n🔧laptop and desktop computer system formatting\n👍and lots more."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="25.0dp"/>
-			<TextView
-				android:id="@+id/textview11"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Reach us through our e-mail address: Nextlevelconcepts.mail\@gmail.com or call us on: 08104277807; 08127005673"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="15.0dp"/>
-			<ImageView
-				android:id="@+id/imageview16"
-				android:layout_width="wrap_content"
-				android:layout_height="180dp"
-				android:src="@drawable/nlc"
-				android:scaleType="centerInside"
-				android:translationY="15.0dp"/>
-			<TextView
-				android:id="@+id/textview23"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="METHODIST CAMPUS FELLOWSHIP (MCF) FUTO CHAPTER"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="35.0dp"/>
-			<TextView
-				android:id="@+id/textview24"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Welcomes You to a new academic session\n08137555225, 09060149546\nWorship with us \@ ICH lecture hall, Old seethead. First floor"
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="35.0dp"/>
-			<ImageView
-				android:id="@+id/imageview15"
-				android:layout_width="250dp"
-				android:layout_height="250dp"
-				android:src="@drawable/mcf"
-				android:scaleType="fitXY"
-				android:translationY="35.0dp"/>
-			<TextView
-				android:id="@+id/textview20"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="RONNIE'S TASTY EDIBLES "
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="55.0dp"/>
-			<TextView
-				android:id="@+id/textview22"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Have you ever tasted something so delicious that it feels like you're on top of the world\?\nRonnie's Tasty Edibles(RTE) will give you more than your expectations, that superb taste you want in your cakes, bread and small chops."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="55.0dp"/>
-			<TextView
-				android:id="@+id/textview21"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="RTE is an assurance to the sweetness of life and a good taste in every bite."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="45.0dp"/>
-			<ImageView
-				android:id="@+id/imageview14"
-				android:layout_width="wrap_content"
-				android:layout_height="300dp"
-				android:src="@drawable/rte1"
-				android:scaleType="centerInside"
-				android:translationY="45.0dp"/>
-			<ImageView
-				android:id="@+id/imageview13"
-				android:layout_width="200dp"
-				android:layout_height="280dp"
-				android:src="@drawable/rte"
-				android:scaleType="fitXY"
-				android:translationY="50.0dp"/>
-			<TextView
-				android:id="@+id/textview19"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:gravity="center_horizontal"
-				android:text="BEATZ PIX MEDIA"
-				android:textSize="16sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="70.0dp"/>
-			<ImageView
-				android:id="@+id/imageview5"
-				android:layout_width="wrap_content"
-				android:layout_height="200dp"
-				android:src="@drawable/beatzlogo"
-				android:scaleType="centerCrop"
-				android:translationY="70.0dp"/>
-			<TextView
-				android:id="@+id/textview18"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Ever had a moment you felt on top of the world, but couldn't keep that feeling forever\? How would you like to immortalize those wonderful emotions and freeze in time, those ecstatic and happy moments shared with loved ones. "
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="70.0dp"/>
-			<TextView
-				android:id="@+id/textview17"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="Call us now for your State-of-the-art Outdoor photoshoots, or come around for our HD studio pics, bringing out the beauty in every smile. Books us also for your Matriculation and Convocation photos, and you'll be so glad you did."
-				android:textSize="14sp"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="60.0dp"/>
-			<TextView
-				android:id="@+id/textview16"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:background="#FFFFFF"
-				android:text="BEATZ PIX MEDIA: Capture that moment..."
-				android:textSize="12sp"
-				android:textStyle="italic"
-				android:textColor="#000000"
-				android:alpha="0.7"
-				android:translationY="335.0dp"/>
-			<TextView
-				android:id="@+id/textview25"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="Swipe to see more pictures&gt;&gt;&gt;"
-				android:textSize="12sp"
-				android:textStyle="bold|italic"
-				android:textColor="#000000"
-				android:translationY="30.0dp"
-				android:layout_gravity="right"/>
-			<HorizontalScrollView
-				android:id="@+id/hscroll1"
-				android:layout_width="match_parent"
-				android:layout_height="240dp"
-				android:translationY="30.0dp">
-				<LinearLayout
-					android:id="@+id/linear7"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="8dp"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintBottom_toTopOf="@+id/vip2"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<android.support.constraint.ConstraintLayout
 					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="8dp"
-					android:orientation="horizontal">
-					<ImageView
-						android:id="@+id/imageview18"
-						android:layout_width="165dp"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview3"
+						android:layout_width="0dp"
 						android:layout_height="wrap_content"
-						android:src="@drawable/pix2"
-						android:scaleType="fitStart"/>
+						android:layout_marginStart="8dp"
+						android:layout_marginEnd="8dp"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="MICHAEL SIMEON C (ACHI) "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<TextView
+						android:id="@+id/textview4"
+						android:layout_width="0dp"
+						android:layout_height="69dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="We may not even realize what our innermost thought are but we can see what we have been thinking by looking at the actions we have taken."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview3"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview3"
+						app:layout_constraintTop_toBottomOf="@+id/textview3" />
+
 					<ImageView
-						android:id="@+id/imageview19"
-						android:layout_width="332dp"
+						android:id="@+id/imageview2"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/achi"
+						app:layout_constraintEnd_toEndOf="@+id/textview4"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview4"
+						app:layout_constraintTop_toBottomOf="@+id/textview4" />
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/vip2"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/vip1"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/vip1"
+				app:layout_constraintTop_toBottomOf="@+id/vip1">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview5"
+						android:layout_width="0dp"
 						android:layout_height="wrap_content"
-						android:src="@drawable/pix1"
-						android:scaleType="fitStart"/>
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="ALL SAINTS' CHAPEL FUTO "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<TextView
+						android:id="@+id/textview6"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="0dp"
+						android:text="Ever wanted to feel and experience love and care like you've never seen before\? \nEver wanted to be in a place where you feel absolutely free to express your worship without limitation\? "
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview5"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview5"
+						app:layout_constraintTop_toBottomOf="@+id/textview5" />
+
+
+					<TextView
+						android:id="@+id/textview7"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="4dp"
+						android:text="All Saints Chapel, FUTO Cordially, and with warm expectation, invites you to worship with us every \nSunday : 8AM\nWednesday : 2PM\nVENUE : Old FUTO park, opposite SEET complex and CCE building."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview6"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview6"
+						app:layout_constraintTop_toBottomOf="@+id/textview6" />
+
+
 					<ImageView
-						android:id="@+id/imageview24"
-						android:layout_width="155dp"
-						android:layout_height="wrap_content"
-						android:src="@drawable/pix3"
-						android:scaleType="fitStart"/>
+						android:id="@+id/imageview3"
+						android:layout_width="0dp"
+						android:layout_height="200dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/asc1"
+						app:layout_constraintEnd_toEndOf="@id/textview7"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview7"
+						app:layout_constraintTop_toBottomOf="@+id/textview7" />
+
+
 					<ImageView
-						android:id="@+id/imageview23"
-						android:layout_width="157dp"
+						android:id="@+id/imageview4"
+						android:layout_width="0dp"
+						android:layout_height="300dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/asc2"
+						app:layout_constraintEnd_toEndOf="@id/imageview3"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/imageview3"
+						app:layout_constraintTop_toBottomOf="@+id/imageview3" />
+
+					<TextView
+						android:id="@+id/textview9"
+						android:layout_width="0dp"
 						android:layout_height="wrap_content"
-						android:src="@drawable/pix4"
-						android:scaleType="fitStart"/>
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="ALL SAINTS'CHAPEL FUTO: a place of love, praise, the gathering of saints... "
+						android:textColor="#000000"
+						android:textSize="14sp"
+						android:textStyle="italic"
+						app:layout_constraintEnd_toEndOf="@id/imageview4"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/imageview4"
+						app:layout_constraintTop_toBottomOf="@+id/imageview4" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/vip3"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintBottom_toTopOf="@+id/vip4"
+				app:layout_constraintEnd_toEndOf="@+id/vip2"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/vip2"
+				app:layout_constraintTop_toBottomOf="@+id/vip2">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview10"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="NEXT LEVEL CONCEPTS"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<TextView
+						android:id="@+id/textview15"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="0dp"
+						android:text="Are u looking for a good Computer Technician or a good Graphic Designer\?\nIf YES then you just found one\nBook us today and you will never regret you did.\nWe design:\n💫E-flyers\n💫Flex banners\n💫Handbill\n💫cards of all kind\n💫envelopes\n💫stickers"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview10"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview10"
+						app:layout_constraintTop_toBottomOf="@+id/textview10" />
+
+
+					<TextView
+						android:id="@+id/textview14"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="4dp"
+						android:text="💥and many more. We also print our designs.\nWe also Specialize in\n🔧computer installation and maintenance\n🔧computer repairs\n🔧burning of CDs\n🔧software installation\n🔧laptop and desktop computer system formatting\n👍and lots more."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview15"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview15"
+						app:layout_constraintTop_toBottomOf="@+id/textview15" />
+
+
+					<TextView
+						android:id="@+id/textview11"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="Reach us through our e-mail address: \nNextlevelconcepts.mail\@gmail.com \nor call us on: \n08104277807; 08127005673"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						android:textStyle="italic"
+						app:layout_constraintEnd_toEndOf="@id/textview14"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview14"
+						app:layout_constraintTop_toBottomOf="@+id/textview14" />
+
+
 					<ImageView
-						android:id="@+id/imageview22"
-						android:layout_width="155dp"
+						android:id="@+id/imageview16"
+						android:layout_width="0dp"
+						android:layout_marginBottom="4dp"
+						android:layout_height="180dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/nlc"
+						app:layout_constraintEnd_toEndOf="@id/textview11"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview11"
+						app:layout_constraintTop_toBottomOf="@+id/textview11" />
+
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/vip4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="8dp"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/vip3"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/vip3"
+				app:layout_constraintTop_toBottomOf="@+id/vip3">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview23"
+						android:layout_width="0dp"
 						android:layout_height="wrap_content"
-						android:src="@drawable/pix5"
-						android:scaleType="fitStart"/>
+						android:layout_marginStart="8dp"
+						android:layout_marginEnd="8dp"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="METHODIST CAMPUS FELLOWSHIP (MCF) FUTO CHAPTER"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<TextView
+						android:id="@+id/textview24"
+						android:layout_width="0dp"
+						android:layout_height="69dp"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="8dp"
+						android:text="Welcomes You to a new academic session\n08137555225, 09060149546\nWorship with us \@ ICH lecture hall, Old seethead. First floor"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview23"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview23"
+						app:layout_constraintTop_toBottomOf="@+id/textview23" />
+
 					<ImageView
-						android:id="@+id/imageview21"
-						android:layout_width="157dp"
+						android:id="@+id/imageview15"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/mcf"
+						app:layout_constraintEnd_toEndOf="@+id/textview24"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview24"
+						app:layout_constraintTop_toBottomOf="@+id/textview24" />
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/vip5"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/vip4"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/vip4"
+				app:layout_constraintTop_toBottomOf="@+id/vip4">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview20"
+						android:layout_width="0dp"
 						android:layout_height="wrap_content"
-						android:src="@drawable/pix6"
-						android:scaleType="fitStart"/>
+						android:layout_marginStart="8dp"
+						android:layout_marginEnd="8dp"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="RONNIE'S TASTY EDIBLES "
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<TextView
+						android:id="@+id/textview22"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="0dp"
+						android:text="Have you ever tasted something so delicious that it feels like you're on top of the world\?\nRonnie's Tasty Edibles(RTE) will give you more than your expectations, that superb taste you want in your cakes, bread and small chops."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview20"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview20"
+						app:layout_constraintTop_toBottomOf="@+id/textview20" />
+
+
+					<TextView
+						android:id="@+id/textview21"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="2dp"
+						android:text="RTE is an assurance to the sweetness of life and a good taste in every bite."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintBottom_toTopOf="@+id/imageview14"
+						app:layout_constraintEnd_toEndOf="@+id/textview22"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview22"
+						app:layout_constraintTop_toBottomOf="@+id/textview22" />
+
 					<ImageView
-						android:id="@+id/imageview20"
-						android:layout_width="170dp"
+						android:id="@+id/imageview14"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginEnd="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/rte1"
+						app:layout_constraintEnd_toStartOf="@+id/guideline"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/textview21"
+						app:layout_constraintTop_toBottomOf="@+id/textview21" />
+
+					<ImageView
+						android:id="@+id/imageview13"
+						android:layout_width="0dp"
+						android:layout_height="250dp"
+						android:layout_marginStart="8dp"
+						android:layout_marginTop="0dp"
+						android:layout_marginEnd="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/rte"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@+id/guideline"
+						app:layout_constraintTop_toBottomOf="@+id/textview21" />
+
+					<android.support.constraint.Guideline
+						android:id="@+id/guideline"
+						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:src="@drawable/pix7"
-						android:scaleType="fitStart"/>
-				</LinearLayout>
-			</HorizontalScrollView>
-			<ImageView
-				android:id="@+id/imageview17"
-				android:layout_width="wrap_content"
-				android:layout_height="200dp"
-				android:src="@drawable/default_image"
-				android:scaleType="center"
-				android:alpha="0.0"/>
-		</LinearLayout>
-	</ScrollView>
-</LinearLayout>
+						android:orientation="vertical"
+						app:layout_constraintGuide_percent="0.5" />
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/vip6"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				app:cardBackgroundColor="@color/cardview_col"
+				app:cardCornerRadius="16dp"
+				app:cardElevation="4dp"
+				app:cardUseCompatPadding="true"
+				app:contentPadding="4dp"
+				app:layout_constraintEnd_toEndOf="@+id/vip5"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="@+id/vip5"
+				app:layout_constraintTop_toBottomOf="@+id/vip5">
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textview19"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:background="@color/cardview_col"
+						android:gravity="center_horizontal"
+						android:padding="8dp"
+						android:text="BEATZ PIX MEDIA"
+						android:textColor="#000000"
+						android:textSize="16sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<ImageView
+						android:id="@+id/imageview5"
+						android:layout_width="0dp"
+						android:layout_height="200dp"
+						android:layout_marginTop="8dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/beatzlogo"
+						app:layout_constraintEnd_toEndOf="@id/textview19"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview19"
+						app:layout_constraintTop_toBottomOf="@+id/textview19" />
+
+
+					<TextView
+						android:id="@+id/textview18"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="4dp"
+						android:text="Ever had a moment you felt on top of the world, but couldn't keep that feeling forever\? How would you like to immortalize those wonderful emotions and freeze in time, those ecstatic and happy moments shared with loved ones."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/imageview5"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/imageview5"
+						app:layout_constraintTop_toBottomOf="@+id/imageview5" />
+
+
+					<TextView
+						android:id="@+id/textview17"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="4dp"
+						android:text="Call us now for your State-of-the-art Outdoor photoshoots, or come around for our HD studio pics, bringing out the beauty in every smile. Books us also for your Matriculation and Convocation photos, and you'll be so glad you did."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						app:layout_constraintEnd_toEndOf="@+id/textview18"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview18"
+						app:layout_constraintTop_toBottomOf="@+id/textview18" />
+
+					<TextView
+						android:id="@+id/textview25"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="4dp"
+						android:text="Swipe to see more pictures&gt;&gt;&gt;"
+						android:textColor="#000000"
+						android:textSize="14sp"
+						android:textStyle="bold|italic"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/guideline1"
+						app:layout_constraintTop_toBottomOf="@+id/textview17" />
+
+					<android.support.constraint.Guideline
+						android:id="@+id/guideline1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						app:layout_constraintGuide_percent="0.3" />
+
+					<HorizontalScrollView
+						android:id="@+id/hscroll1"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="8dp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/textview25">
+
+						<LinearLayout
+							android:id="@+id/linear7"
+							android:layout_width="match_parent"
+							android:layout_height="240dp"
+							android:orientation="horizontal"
+							android:padding="8dp">
+
+							<ImageView
+								android:id="@+id/imageview18"
+								android:layout_width="165dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix2" />
+
+							<ImageView
+								android:id="@+id/imageview19"
+								android:layout_width="332dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix1" />
+
+							<ImageView
+								android:id="@+id/imageview24"
+								android:layout_width="155dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix3" />
+
+							<ImageView
+								android:id="@+id/imageview23"
+								android:layout_width="157dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix4" />
+
+							<ImageView
+								android:id="@+id/imageview22"
+								android:layout_width="155dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix5" />
+
+							<ImageView
+								android:id="@+id/imageview21"
+								android:layout_width="157dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix6" />
+
+							<ImageView
+								android:id="@+id/imageview20"
+								android:layout_width="170dp"
+								android:layout_height="wrap_content"
+								android:scaleType="fitStart"
+								android:src="@drawable/pix7" />
+						</LinearLayout>
+					</HorizontalScrollView>
+
+
+					<TextView
+						android:id="@+id/textview16"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:alpha="0.8"
+						android:background="@color/cardview_col"
+						android:padding="4dp"
+						android:text="BEATZ PIX MEDIA: Capture that moment..."
+						android:textColor="#000000"
+						android:textSize="14sp"
+						android:textStyle="italic"
+						app:layout_constraintEnd_toEndOf="@+id/textview18"
+						app:layout_constraintHorizontal_bias="0.0"
+						app:layout_constraintStart_toStartOf="@id/textview18"
+						app:layout_constraintTop_toBottomOf="@+id/hscroll1" />
+
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+
+		</android.support.constraint.ConstraintLayout>
+	</LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
